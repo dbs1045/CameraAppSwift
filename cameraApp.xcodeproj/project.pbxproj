@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		FF5F9CD22772D07B005F7D59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5F9CD12772D07B005F7D59 /* AppDelegate.swift */; };
-		FF5F9CD42772D07B005F7D59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5F9CD32772D07B005F7D59 /* SceneDelegate.swift */; };
 		FF5F9CD62772D07B005F7D59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5F9CD52772D07B005F7D59 /* ViewController.swift */; };
 		FF5F9CD92772D07B005F7D59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5F9CD72772D07B005F7D59 /* Main.storyboard */; };
 		FF5F9CDB2772D07C005F7D59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5F9CDA2772D07C005F7D59 /* Assets.xcassets */; };
 		FF5F9CDE2772D07C005F7D59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5F9CDC2772D07C005F7D59 /* LaunchScreen.storyboard */; };
+		FF5F9CE62772D675005F7D59 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5F9CE52772D675005F7D59 /* PhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FF5F9CCE2772D07B005F7D59 /* cameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF5F9CD12772D07B005F7D59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF5F9CD32772D07B005F7D59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FF5F9CD52772D07B005F7D59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF5F9CD82772D07B005F7D59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF5F9CDA2772D07C005F7D59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF5F9CDD2772D07C005F7D59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF5F9CDF2772D07C005F7D59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF5F9CE52772D675005F7D59 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				FF5F9CD12772D07B005F7D59 /* AppDelegate.swift */,
-				FF5F9CD32772D07B005F7D59 /* SceneDelegate.swift */,
 				FF5F9CD52772D07B005F7D59 /* ViewController.swift */,
 				FF5F9CD72772D07B005F7D59 /* Main.storyboard */,
 				FF5F9CDA2772D07C005F7D59 /* Assets.xcassets */,
 				FF5F9CDC2772D07C005F7D59 /* LaunchScreen.storyboard */,
 				FF5F9CDF2772D07C005F7D59 /* Info.plist */,
+				FF5F9CE52772D675005F7D59 /* PhotoViewController.swift */,
 			);
 			path = cameraApp;
 			sourceTree = "<group>";
@@ -140,7 +140,7 @@
 			files = (
 				FF5F9CD62772D07B005F7D59 /* ViewController.swift in Sources */,
 				FF5F9CD22772D07B005F7D59 /* AppDelegate.swift in Sources */,
-				FF5F9CD42772D07B005F7D59 /* SceneDelegate.swift in Sources */,
+				FF5F9CE62772D675005F7D59 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
