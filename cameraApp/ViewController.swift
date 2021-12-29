@@ -21,6 +21,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         prepareCamera()
     }
     func prepareCamera(){
@@ -77,7 +80,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                 photoVC.takenPhoto = image
                 
                 DispatchQueue.main.async {
-                    self.present(photoVC, animated: true, completion: nil)
+                    self.present(photoVC, animated: true, completion: {
+                        self.stopCaptureSession()
+                    })
                 }
             }
             
@@ -98,6 +103,15 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             
         }
         return nil
+    }
+    func stopCaptureSession(){
+        self.captureSession.stopRunning()
+        
+        if let inputs = captureSession.inputs as? [AVCaptureDeviceInput]{
+            for input in inputs{
+                self.captureSession.removeInput(input)
+            }
+        }
     }
     
 }
